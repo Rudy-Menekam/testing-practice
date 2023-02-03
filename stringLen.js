@@ -1,12 +1,8 @@
  const stringLength = (string) => {
-
-    let index = 0;
-  
-    while (string.slice(index) !== '') {
-      index++;
+    if (string.length > 10) {
+        throw new Error('Invalid string');
     }
-  
-    return index;
+    return string.length;
   }
 
   export default stringLength;
